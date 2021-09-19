@@ -25,7 +25,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
+  <!-- <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
     <div class="container d-flex">
       <div class="contact-info mr-auto">
         <i class="icofont-envelope"></i> <a href="mailto:maschand02@gmail.com">maschand02@gmail.com</a>
@@ -38,7 +38,7 @@
         <a href="https://www.linkedin.com/in/candra-prasetyo-52163421b/" target="_blank" class="linkedin"><i class="icofont-linkedin"></i></i></a>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
@@ -56,13 +56,72 @@
       </nav>
       <nav class="nav-menu d-none d-lg-block ml-auto">
         <ul>
-          <li><a href="#pricing">SIGN UP</a></li>
-          <li><a href="#team">LOGIN</a></li>
+          <li><a href="#pricing" data-toggle="modal" data-target="#exampleModal">SIGN UP</a></li>
+          <li><a href="#team" data-toggle="modal" data-target="#exampleModal">LOGIN</a></li>
         </ul>
       </nav>
 
     </div>
   </header>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex">
+          <h5 class="card-title text-center fw-light fs-5">Sign In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="background:none;">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card border-0 shadow rounded-3">
+                <div class="card-body">
+                  <form>
+                    <div class="form-label-group">
+                      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" value="youremail@binar.co.id">
+                      <label for="inputEmail">Email address</label>
+                    </div>
+                    <div class="form-label-group">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+      
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                      <label class="form-check-label" for="rememberPasswordCheck">
+                        Remember password
+                      </label>
+                    </div>
+                    <div class="d-grid">
+                      <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
+                        in</button>
+                    </div>
+                    <hr class="my-4">
+                    <div class="d-grid mb-2">
+                      <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit">
+                        <i class="fab fa-google me-2"></i> Sign in with Google
+                      </button>
+                    </div>
+                    <div class="d-grid">
+                      <button class="btn btn-facebook btn-login text-uppercase fw-bold" type="submit">
+                        <i class="fab fa-facebook-f me-2"></i> Sign in with Facebook
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
