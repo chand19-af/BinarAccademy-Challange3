@@ -624,10 +624,10 @@ section {
 }
 
 .about .carousel-indicators li {
-  width: 20px;
-  height: 20px;
-  margin-right: 15px;
-  margin-left: 15px;
+  width: 10px;
+  height: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
   border-radius: 50%;
   background: none;
   border: 2.5px solid #fff;
@@ -928,7 +928,7 @@ section {
   color: #fff;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 320px) {
   .services {
     background-attachment: fixed;
   }
@@ -1008,7 +1008,7 @@ section {
 --------------------------------------------------------------*/
 
 .topscore {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/topscore.png") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/top-score.png") fixed center center;
   background-size: cover;
   padding: 0;
   height: 100vh;
@@ -1145,6 +1145,20 @@ section {
   border: 2px solid #cc1616;
 }
 
+@media (min-width: 320px) and (max-width: 780px) {
+  .topscore {
+    background-attachment: fixed;
+    height: 200vh;
+  }
+}
+
+@media (min-width: 780px) and (max-width: 1024px) {
+  .topscore {
+    background-attachment: fixed;
+    height: 150vh;
+  }
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1242,6 +1256,21 @@ section {
 
 .footer .col-md-7 {
   padding-right: 0;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .footer {
+    background-attachment: fixed;
+    height: 100vh;
+  }
+
+  .skull-img {
+    position: absolute;
+  }
+
+  .footer-form {
+    
+  }
 }
 
 .form-signin {
